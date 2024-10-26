@@ -4,16 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML 5 Form Input Elements</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        label {
+            width: 100px;
+            display: inline-block;
+        }
+    </style>
 </head>
 <body>
     <h1>HTML 5 Form Input Elements</h1>
 
-    Name: <input type="text" size="50" placeholder="Surname, Given, Middle">
+    <label>Name:</label> <input type="text" size="50" placeholder="Surname, Given, Middle">
     <br>
-    Password: <input type="password">
+    <label for="newpassword">Password:</label> <input type="password" id="newpassword">
     <br>
-    Search: <input type="search" placeholder="Search for products">
+    <label>Search:</label> <input type="search" placeholder="Search for products">
     <br>
-    Favorite Number: <input type="number" value="10">
+    <label>Favorite Number:</label> <input type="number" value="10">
+    <br>
+    <label for="dob">Date of Birth:</label> <input type="date" id="dob">
+    <br>
+    <input type="time">
+    <br>
+    <input type="datetime-local">
+    <br>
+    <input type="month">
+    <br>
+    <input type="color">
 </body>
 </html>
