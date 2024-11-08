@@ -21,7 +21,8 @@
     // Default XAMPP MySQL User: root = (blank)
     // Task 2.1
     try {
-        $DBCONN = new mysqli('127.0.0.1', 'root', '', 'task_sample_db');
+        $DBCONN = new mysqli('127.0.0.1', 'root', '',
+            'task_sample_db', '3306');
         
         // ` (backtick) = Shift + ~
         $sql = "SELECT * FROM `note` ORDER BY `dateTime` DESC";

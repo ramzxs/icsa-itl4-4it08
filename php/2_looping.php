@@ -4,13 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Looping</title>
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+        }
+    </style>
 </head>
 <body>
     <h1>LOOPING</h1>
 
     <?php
     $x = 13;
-    echo '<b>Variable X = ' . $x . '</b><br>';
+    echo '<b>Variable x = ' . $x . '</b><br>';
     
     // $i
     // 1     1<br>
