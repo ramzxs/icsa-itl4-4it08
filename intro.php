@@ -42,10 +42,12 @@
     $agreed = false; // Boolean: true | false
 
 
-    /* OPERATORS & EXPRESSIONS (term op term) */
+    /* EXPRESSIONS && OPERATORS */
+    // term = literal | variable
+    // expression = term | term operator term | term operator expression
 
     // String Operators
-    // . = Conctenation
+    // . = Concatenation
     // "$variable" = Interpolation (use "" always)
     $space = " ";
     $word = "Apple";
@@ -72,8 +74,18 @@
     echo ('A' == 'a') . "<br>"; // false to String is "" (empty)
     echo ('A' != 'a') . "<br>"; // true  to String is "1"
     echo ('A' <> 'a') . "<br>";
+    
     // && (AND)
+    // true  && true  = true
+    // true  && false = false
+    // false && true  = false
+    // false && false = false
+
     // || (OR)
+    // true  || true  = true
+    // true  || false = true
+    // false || true  = true
+    // false || false = false
 
 
     // EXERCISE 1: *C to *F

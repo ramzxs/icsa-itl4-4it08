@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PHP Conditional Statements</title>
+    <title>PHP Branching Statements</title>
     <style>
         body {
             font-family: 'Courier New', Courier, monospace;
@@ -11,7 +11,7 @@
     </style>
 </head>
 <body>
-    <h1>PHP CONDITIONAL STATEMENTS</h1>
+    <h1>PHP BRANCHING STATEMENTS</h1>
 
     <?php
     /* CONDITIONAL STATEMENTS */

@@ -5,6 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Functions</title>
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+        }
+    </style>
 </head>
 
 <body>
@@ -12,8 +17,11 @@
 
     <?php
     // FUNCTION DEFINITION
-    // PARAMETERS
-    // Variable Scope
+    // function Keyword
+    // Function Name (does not start with a number)
+    // Parameter(s)
+    // Block & Variable Scope
+    // Return Value
     function functionName($n)
     {
         // global $a;
