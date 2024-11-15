@@ -11,11 +11,10 @@
 
     <?php
     // RDBMS = MariaDB / MySQL
-    // 3 Ways to Connect to MySQL in PHP
+    // Three (3) Ways to Connect to MySQL in PHP
     // 1. mysql Extension - Old
-    // 2. mysqli Extension - Improved version: Direct, Native interface to MySQL
-    //                       (https://www.php.net/manual/en/book.mysqli.php)
-    // 3. PDO (PHP Database Objects) - Migrating from MySQL to PostreSQL, no code changes needed
+    // 2. mysqli Extension - Improved version: Direct, Native interface to MySQL (https://www.php.net/manual/en/book.mysqli.php)
+    // 3. PDO (PHP Database Objects) - Same code that works on most RDBMSes: MySQL, PostreSQL, ODBC, etc. (https://www.php.net/manual/en/book.pdo.php)
 
     // Hostname: localhost or 127.0.0.1
     // Default XAMPP MySQL User: root = (blank)
