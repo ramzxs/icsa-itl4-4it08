@@ -18,6 +18,7 @@
         <br>
 
         <?php /*
+        Manual: https://www.php.net/manual/en/function.date.php
         date('FORMAT')            // Use current timestamp
         date('FORMAT', timestamp) // Use manual: strtotime('2024-11-08 22:22')
         
