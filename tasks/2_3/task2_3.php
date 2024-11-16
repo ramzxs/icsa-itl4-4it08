@@ -22,8 +22,23 @@
 
     $result = $DBCONN->query($sql);
     for ($i = 1; $row = $result->fetch_assoc(); $i++) {
-        echo $i . '. ' . $row['stdID'] . '<br>';
+        echo $i . '. '; 
+        ?>
+
+        <a href="javascript:loadStudentInfo(<?= $i ?>, '<?= $row['stdID'] ?>')"><?= $row['stdID'] ?></a>
+
+        <span id="name<?= $i ?>">_</span>
+        <br>
+
+        <?php
     }
     ?>
+
+    <script>
+        function loadStudentInfo(row, stdID) {
+            // alert("Hello " + stdID + ' at row ' + row);
+            // Search for JavaScript asynchronous fetch call
+        }
+    </script>
 </body>
 </html>
