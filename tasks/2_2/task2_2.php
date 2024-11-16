@@ -49,10 +49,11 @@ $daysToAdd = isset($_GET['daysToAdd']) ? $_GET['daysToAdd'] : 1;
 
         Result:
         <b><?php
+        if (isset($_GET['daysToAdd'])) {
             $date = date($shortFormat);
 
             echo calculate($date, $daysToAdd);
-            ?></b>
+        } ?></b>
         <br>
     </form>
 </body>
