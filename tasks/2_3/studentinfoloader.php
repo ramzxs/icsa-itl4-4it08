@@ -7,7 +7,7 @@ if (isset($_GET['id'])) {
     $result = $DBCONN->query($sql);
 
     if ($row = $result->fetch_assoc()) {
-        echo $row['stdNameEN'] . ' ' . $row['stdNameAR'];
+        echo $row['stdNameEN'] . ' <b>' . $row['stdNameAR'].'</b>';
     } else {
         echo 'Not Found';
     }
