@@ -46,7 +46,8 @@ function calculate($date, $numDays) {
     global $longFormat;
 
     // '2024-11-16 23:14 + 14 DAY' -> 1732461328 (Unix time)
-    $timestamp = strtotime($date . ' + ' . $numDays . ' DAY');
+    $str = $date . ' ' . $numDays . ' DAY';
+    $timestamp = strtotime(datetime: $str);
   
     $result = date($longFormat, timestamp: $timestamp);
     return $result;
