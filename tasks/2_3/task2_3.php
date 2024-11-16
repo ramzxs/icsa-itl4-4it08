@@ -1,3 +1,7 @@
+<?php
+$DBCONN = new mysqli('127.0.8.1', 'root', '', 'q8univ_elearning_db', '3306');
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,8 +20,6 @@
     <h1>STUDENT RECORDS</h1>
 
     <?php
-    $DBCONN = new mysqli('127.0.8.1', 'root', '', 'q8univ_elearning_db', '3306');
-
     $sql = "SELECT * FROM `student` ORDER BY `stdID` ASC";
 
     $result = $DBCONN->query($sql);
@@ -35,9 +37,12 @@
     ?>
 
     <script>
-        function loadStudentInfo(row, stdID) {
-            // alert("Hello " + stdID + ' at row ' + row);
-            // Search for JavaScript asynchronous fetch call
+        async function loadStudentInfo(i, stdID) {
+            // alert("Loading " + stdID + ' at row ' + i);
+            var url = 'studentinfoloader.php?id=' + stdID;
+            const request = await fetch(url);
+            const result = await request.text();
+            document.getElementById('name'+i).innerHTML = result; 
         }
     </script>
 </body>
