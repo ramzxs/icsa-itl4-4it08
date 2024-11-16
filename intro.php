@@ -30,6 +30,10 @@
 
     <h2>LOCAL DEV SERVER</h2>
 
+    <p>
+        URL: http|https://IP|hostname[:port80]/folder/file.ext
+    </p>
+
 	<ul>
         <li>http://localhost/ (Local)</li>
         <li>http://127.0.0.1/ (Local)</li>

@@ -9,6 +9,7 @@
     <h1>TASK 1.1.3: Interact with other servers</h1>
 
     <?php
+    // Checkout cURL also
     $contents = file_get_contents("https://en.wikipedia.org/wiki/API");
     echo $contents; // Search Engine Bots / Web Crawlers: Track and rank all the links
     ?>
