@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.2.0
+-- version 5.2.1
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 02, 2024 at 04:43 PM
--- Server version: 10.4.27-MariaDB
--- PHP Version: 8.2.0
+-- Generation Time: Nov 16, 2024 at 04:42 PM
+-- Server version: 10.4.32-MariaDB
+-- PHP Version: 8.2.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -39,10 +39,10 @@ CREATE TABLE `course` (
 --
 
 INSERT INTO `course` (`crsID`, `crsTitle`, `crsDescription`, `crsUnits`) VALUES
-('JAVA', 'Java Programming Course', 'Java\r\nProgramming\r\nLanguage', '30.00'),
-('LAW', 'Law and Order', '', '30.00'),
-('UKITL4', 'UK IT Level 4 Diploma in IT', 'International\r\nDiploma\r\nin\r\nInformation Technology', '120.00'),
-('WEBDEV', 'Web Development Course', 'Web Design\r\nWeb Development\r\nWebmastering', '30.00');
+('JAVA', 'Java Programming Course', 'Java\r\nProgramming\r\nLanguage', 30.00),
+('LAW', 'Law and Order', '', 30.00),
+('UKITL4', 'UK IT Level 4 Diploma in IT', 'International\r\nDiploma\r\nin\r\nInformation Technology', 120.00),
+('WEBDEV', 'Web Development Course', 'Web Design\r\nWeb Development\r\nWebmastering', 30.00);
 
 -- --------------------------------------------------------
 
@@ -91,8 +91,8 @@ CREATE TABLE `enrollment` (
 INSERT INTO `enrollment` (`enrID`, `enrDateTime`, `enrCourse`, `enrStudent`, `AccessUntil`) VALUES
 (2, '2023-09-15 09:48:27', 'JAVA', '2023-00000', '2024-01-01'),
 (11, '2023-09-15 10:09:24', 'WEBDEV', '2023-00001', NULL),
-(12, '2024-06-14 10:35:30', 'LAW', '2024-1010', NULL),
-(13, '2024-06-14 10:37:30', 'UKITL4', '2024-1010', NULL);
+(12, '2024-06-14 10:35:30', 'LAW', '2024-01010', NULL),
+(13, '2024-06-14 10:37:30', 'UKITL4', '2024-01010', NULL);
 
 -- --------------------------------------------------------
 
@@ -112,9 +112,9 @@ CREATE TABLE `student` (
 --
 
 INSERT INTO `student` (`stdID`, `stdPassword`, `stdNameEN`, `stdNameAR`) VALUES
-('2023-00000', '*48D38EC2A7239A9FAE9869B9ABB8398BEC1BD0FC', 'Test', 'Student'),
-('2023-00001', '*90F2A225B1179A5D554F9DA11B0C12FA66681109', 'Test', 'Two'),
-('2024-1010', '*592E20C9837BD8CD85C86104BE4E84430C1FD497', 'A', 'B');
+('2023-00000', '*48D38EC2A7239A9FAE9869B9ABB8398BEC1BD0FC', 'Zero', 'صفر'),
+('2023-00001', '*90F2A225B1179A5D554F9DA11B0C12FA66681109', 'One', 'واحد'),
+('2024-01010', '*592E20C9837BD8CD85C86104BE4E84430C1FD497', 'Ten', 'عشرة');
 
 --
 -- Indexes for dumped tables
