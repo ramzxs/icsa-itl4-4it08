@@ -39,6 +39,9 @@ $DBCONN = new mysqli('127.0.8.1', 'root', '', 'q8univ_elearning_db', '3306');
     <script>
         async function loadStudentInfo(i, stdID) {
             console.log("Loading " + stdID + ' at row ' + i);
+            document.getElementById('name'+i).innerHTML = '<img src="loading.gif" width="32">';
+
+
             var url = 'studentinfoloader.php?id=' + stdID;
             const request = await fetch(url);
             const result = await request.text();

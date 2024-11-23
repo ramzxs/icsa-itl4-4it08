@@ -16,15 +16,15 @@
     <h1>PHP BASICS</h1>
     <?php
     /* PHP
-   PROGRAMMING
-   LANGUAGE */
+    PROGRAMMING
+    LANGUAGE */
 
     // Comments
 
     /* VARIABLES */
     $name = "Romeo"; // '' or ""
     $age = 18;
-    $gender = 'M';   // M = Male | F = Femaile
+    $gender = 'M';   // M = Male | F = Female
     $agreed = false; // Boolean: true | false
 
 
@@ -42,7 +42,7 @@
     echo "<br>$word $word2<br>";
 
     // Numerical Operators
-    // + - * / % (modulor or remainder)
+    // + - * / % (modulo or remainder)
     $a = 10;
     $b = 4;
     echo ($a + $b) . '<br>';

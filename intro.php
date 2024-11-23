@@ -40,9 +40,11 @@
         <li>http://192.168.8.138/ (Local, LAN, Intranet)</li>
     </ul>
 	
-    <h2>URL TO FOLDER MAPPING</h2>
+    <h2>FOLDER-TO-URL MAPPING</h2>
     <ul>
-        <li>http://localhost/icsa-itl4-4it08/ ==> C:/xampp/htdocs/icsa-itl4-4it08/</li>
+        <li>C:/xampp/htdocs/file.php         ==> http://localhost/file.php</li>
+        <li>C:/xampp/htdocs/folder/          ==> http://localhost/folder/</li>
+        <li>C:/xampp/htdocs/icsa-itl4-4it08/ ==> http://localhost/icsa-itl4-4it08/</li>
     </ul>
 </body>
 

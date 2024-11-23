@@ -35,5 +35,10 @@
     <input type="month">
     <br>
     <input type="color">
+
+    <br>
+    <input type="image" src="feedback.svg" width="100">
+    <br>
+    <input type="url" patter="http://.*">
 </body>
 </html>
